@@ -1,0 +1,67 @@
+<div class="Signin-container">
+    <p-card class="login-card">
+      <div class="login-header">
+        <h2>Sign in Now!</h2>
+        <p>Please Sign in to a new account</p>
+      </div>
+      <div class="login-form">
+        <form (ngSubmit)="onSubmit()">
+          <div class="p-fluid p-field">
+            <label for="LastName">LastName</label>
+            <input
+              id="lastName"
+              type="lastName"
+              pInputText
+              [(ngModel)]="LastName"
+              name="lastName"
+              required
+              placeholder="Enter your LastName"
+            />
+          </div>
+          <div class="p-fluid p-field">
+            <label for="Email">FirstName</label>
+            <input
+              id="firstName"
+              type="firstName"
+              pInputText
+              [(ngModel)]="FirstName"
+              name="firstName"
+              required
+              placeholder="Enter your FirstName"
+            />
+          </div>
+          <div class="p-fluid p-field">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              pInputText
+              [(ngModel)]="Email"
+              name="email"
+              required
+              placeholder="Enter your Email"
+            />
+          </div>
+          <div class="p-fluid p-field">
+            <label for="password">Password</label>
+            <input
+              id="password"
+              type="password"
+              pInputText
+              [(ngModel)]="password"
+              name="password"
+              required
+              placeholder="Enter your password"
+            />
+          </div>
+          <div class="p-fluid">
+            <button type="submit" pButton label="Sign In" icon="pi pi-sign-in" class="login-button"  ></button>
+          </div>
+        </form>
+        <div class="p-fluid sign-up">
+          <p-button label="Log in" icon="pi pi-user-plus" class="sign-up-button" (click)="goToLogin()"></p-button>
+        </div>
+      </div>
+    </p-card>
+  </div>
+  
